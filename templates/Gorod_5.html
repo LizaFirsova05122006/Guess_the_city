@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 align="center">Что это за город?</h1>
+<p align="right">Достопремечательности:</p>
+<img style="float: right;" alt="" src="static/img/5.png" />
+<p>
+   <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4cbebe7907f22be8b887f80b62de2c4aaad34a4bf19d322500b77b8e1aafdaf9&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+</p>
+<style>
+a.nubex {
+color: #fff;
+user-select: none; /* Убираем текстовое выделение */
+text-decoration: none;	/* Убираем подчеркивание */
+outline: none; /* Убираем контур вокруг ссылки */
+background-color: #fa8e47; /* Цвет фона */
+padding: 1em 2em; /* Отступ от текста до рамки */
+}
+a.nubex:active {
+background-color: #ee6206; /* Цвет кнопки при нажатии */
+}
+a.nubex:hover {
+background-color: #f97f2e; /* Цвет кнопки при наведении курсора */
+}
+ </style>
+<a href="#" class="nubex">Орск</a>
+<a href="#" class="nubex">Москва</a>
+<a href="#" class="nubex">Самара</a>
+<a href="#" class="nubex">Санкт_Петербург</a>
+<p style="margin-top: 30px;"><a style="text-align: left;" href="http://127.0.0.1:5000/Verno" class="nubex">Калининград</a></p>
+{% endblock %}

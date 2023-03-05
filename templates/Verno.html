@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Молодец!</h1>
+<h3>Возвращайся на главную, чтобы продолжить игру</h3>
+<style>
+a.nubex {
+color: #fff;
+user-select: none; /* Убираем текстовое выделение */
+text-decoration: none;	/* Убираем подчеркивание */
+outline: none; /* Убираем контур вокруг ссылки */
+background-color: #fa8e47; /* Цвет фона */
+padding: 1em 2em; /* Отступ от текста до рамки */
+}
+a.nubex:active {
+background-color: #ee6206; /* Цвет кнопки при нажатии */
+}
+a.nubex:hover {
+background-color: #f97f2e; /* Цвет кнопки при наведении курсора */
+}
+ </style>
+<a href="http://127.0.0.1:5000/" class="nubex">Главная</a>
+{% endblock %}
